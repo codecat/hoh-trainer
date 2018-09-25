@@ -1,0 +1,47 @@
+<gui>
+	<sprites>
+%include "gui/closebutton_sprites.inc"
+%include "gui/scalablebutton_sprites.inc"
+%include "gui/scrollbar_sprites.inc"
+%include "gui/main_menu/checkbox_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="150" height="200" spriteset="gui/variable/bigwindow_borders.sval" anchor="0.5 0.5">
+				<!-- Header -->
+				<rect width="146" height="18" offset="2 2" flow="hbox">
+					<!-- Headline -->
+					<rect width="125" height="18" spriteset="gui/variable/headline_hor.sval">
+						<text font="gui/fonts/arial11_bold.fnt" text="TRAINER" anchor="0.5 0.5" />
+					</rect>
+
+					<!-- Separator -->
+					<rect width="3" height="18" spriteset="gui/variable/3pxbar_vert.sval" />
+
+					<!-- Close button -->
+					<spritebutton spriteset="close" func="close" />
+				</rect>
+
+				<!-- Separator -->
+				<rect width="146" height="3" offset="2 20" spriteset="gui/variable/3pxbar_hor.sval" />
+
+				<!-- List -->
+				<scrollrect id="list" width="132" height="175" offset="2 23" flow="vbox" padding="2 4" spacing="2" color="#202a26FF" shadow="#0c120fFF" shadowsize="2" />
+
+				<!-- Scrollbar -->
+				<scrollbar forid="list" spriteset="scrollbar" outside="true" offset="3 0" buttons-size="14" trough-offset="18" handle-border="2" />
+
+				<!-- Separators -->
+				<rect width="3" height="175" offset="134 23" spriteset="gui/variable/3pxbar_vert.sval" />
+				<rect width="3" height="175" offset="145 23" spriteset="gui/variable/3pxbar_vert.sval" />
+			</rect>
+
+			<!-- Checkbox template -->
+			<checkbox id="template-check" visible="false" offset="2 0" spriteset="checkbox" font="gui/fonts/arial11.fnt" />
+
+			<!-- Button template -->
+			<scalebutton id="template-button" visible="false" spriteset="scalebutton" offset="2 0" font="gui/fonts/arial11.fnt" width="124" />
+		</group>
+	</doc>
+</gui>

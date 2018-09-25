@@ -1,0 +1,209 @@
+<loader>Trainer::AddCheats</loader>
+<array>
+	<!-- Infinite health -->
+	<dict>
+		<string name="class">Trainer::ModifierCheat</string>
+
+		<string name="id">infinitehealth</string>
+		<string name="name">Infinite Health</string>
+		<string name="description">You never take any damage.</string>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::Armor</string>
+			<float name="dmg-taken-mul">0</float>
+		</dict>
+	</dict>
+
+	<!-- Infinite mana -->
+	<dict>
+		<string name="class">Trainer::ModifierCheat</string>
+
+		<string name="id">infinitemana</string>
+		<string name="name">Infinite Mana</string>
+		<string name="description">Everything that costs mana is free.</string>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::SpellCost</string>
+			<float name="mana-mul">0</float>
+		</dict>
+	</dict>
+
+	<!-- Fast walking -->
+	<dict>
+		<string name="class">Trainer::ModifierCheat</string>
+
+		<string name="id">fastwalking</string>
+		<string name="name">Fast Walking</string>
+		<string name="description">Increase walking speed by 4 times the usual.</string>
+
+		<dict name="modifier">
+			<string name="class">Modifiers::Speed</string>
+			<float name="movement-mul">4</float>
+		</dict>
+	</dict>
+
+	<!-- No skill cooldown -->
+	<dict>
+		<string name="class">Trainer::NoSkillCooldown</string>
+
+		<string name="id">noskillcooldown</string>
+		<string name="name">No Skill Cooldown</string>
+		<string name="description">Get rid of the cooldown on active skills.</string>
+	</dict>
+
+	<!-- Auto skills -->
+	<dict>
+		<string name="class">Trainer::AutoSkills</string>
+
+		<string name="id">autoskills</string>
+		<string name="name">Auto Skills</string>
+		<string name="description">All skills can be held down.</string>
+	</dict>
+
+	<!-- Give 10k gold -->
+	<dict>
+		<string name="class">Trainer::EffectCheat</string>
+
+		<string name="id">gold10k</string>
+		<string name="name">Give 10k Gold</string>
+		<string name="description">Gives you 10k gold.</string>
+
+		<dict name="effect">
+			<string name="class">CheatGiveGold</string>
+			<int name="amount">10000</int>
+		</dict>
+	</dict>
+
+	<!-- Give 100k gold -->
+	<dict>
+		<string name="class">Trainer::EffectCheat</string>
+
+		<string name="id">gold100k</string>
+		<string name="name">Give 100k Gold</string>
+		<string name="description">Gives you 100k gold.</string>
+
+		<dict name="effect">
+			<string name="class">CheatGiveGold</string>
+			<int name="amount">100000</int>
+		</dict>
+	</dict>
+
+	<!-- Give 10 ore -->
+	<dict>
+		<string name="class">Trainer::EffectCheat</string>
+
+		<string name="id">ore10</string>
+		<string name="name">Give 10 Ore</string>
+		<string name="description">Gives you 10 ore.</string>
+
+		<dict name="effect">
+			<string name="class">CheatGiveOre</string>
+			<int name="amount">10</int>
+		</dict>
+	</dict>
+
+	<!-- Give 100 ore -->
+	<dict>
+		<string name="class">Trainer::EffectCheat</string>
+
+		<string name="id">ore100</string>
+		<string name="name">Give 100 Ore</string>
+		<string name="description">Gives you 100 ore.</string>
+
+		<dict name="effect">
+			<string name="class">CheatGiveOre</string>
+			<int name="amount">100</int>
+		</dict>
+	</dict>
+
+	<!-- No keys required -->
+	<dict>
+		<string name="class">Trainer::NoKeysRequired</string>
+
+		<string name="id">nokeysrequired</string>
+		<string name="name">No Keys Required</string>
+		<string name="description">All chests and doors open even if you don't have the key for it.</string>
+	</dict>
+
+	<!-- Give bronze key -->
+	<dict>
+		<string name="class">Trainer::EffectCheat</string>
+
+		<string name="id">bronzekey</string>
+		<string name="name">Give Bronze Key</string>
+		<string name="description">Gives you a bronze key.</string>
+
+		<dict name="effect">
+			<string name="class">GiveKey</string>
+			<int name="lock">0</int>
+			<int name="amount">1</int>
+		</dict>
+	</dict>
+
+	<!-- Give silver key -->
+	<dict>
+		<string name="class">Trainer::EffectCheat</string>
+
+		<string name="id">silverkey</string>
+		<string name="name">Give Silver Key</string>
+		<string name="description">Gives you a silver key.</string>
+
+		<dict name="effect">
+			<string name="class">GiveKey</string>
+			<int name="lock">1</int>
+			<int name="amount">1</int>
+		</dict>
+	</dict>
+
+	<!-- Give gold key -->
+	<dict>
+		<string name="class">Trainer::EffectCheat</string>
+
+		<string name="id">goldkey</string>
+		<string name="name">Give Gold Key</string>
+		<string name="description">Gives you a gold key.</string>
+
+		<dict name="effect">
+			<string name="class">GiveKey</string>
+			<int name="lock">2</int>
+			<int name="amount">1</int>
+		</dict>
+	</dict>
+
+	<!-- Give gold key -->
+	<dict>
+		<string name="class">Trainer::EffectCheat</string>
+
+		<string name="id">acekey</string>
+		<string name="name">Give Ace Key</string>
+		<string name="description">Gives you an ace key.</string>
+
+		<dict name="effect">
+			<string name="class">GiveKey</string>
+			<int name="lock">3</int>
+			<int name="amount">1</int>
+		</dict>
+	</dict>
+
+	<!-- Level up -->
+	<dict>
+		<string name="class">Trainer::LevelUpCheat</string>
+
+		<string name="id">levelup1</string>
+		<string name="name">Level Up</string>
+		<string name="description">Level up with 1 level.</string>
+
+		<int name="amount">1</int>
+	</dict>
+
+	<!-- 5 levels up -->
+	<dict>
+		<string name="class">Trainer::LevelUpCheat</string>
+
+		<string name="id">levelup5</string>
+		<string name="name">5 Levels Up</string>
+		<string name="description">Level up with 5 levels.</string>
+
+		<int name="amount">5</int>
+	</dict>
+</array>

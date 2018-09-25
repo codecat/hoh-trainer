@@ -1,0 +1,6 @@
+<dict>
+	<array name="ignore">
+		<string>Readme.md</string>
+		<string>Screenshot.png</string>
+	</array>
+</dict>
