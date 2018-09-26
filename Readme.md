@@ -1,5 +1,5 @@
 # Trainer
-![](http://missdev.nl/hoh_trainer.gif)
+![](Trainer.gif)
 
 Trainer mod for Heroes of Hammerwatch, which can also be extended upon by other mods. It also serves as a good example project of what you can do with the modding API. (Hooks, sval loaders, etc.)
 

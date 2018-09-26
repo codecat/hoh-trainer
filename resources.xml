@@ -1,5 +1,6 @@
 <dict>
 	<array name="ignore">
 		<string>Readme.md</string>
+		<string>Trainer.gif</string>
 	</array>
 </dict>
