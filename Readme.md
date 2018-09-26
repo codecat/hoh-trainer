@@ -1,9 +1,9 @@
 # Trainer
-![](Trainer.gif)
-
 Trainer mod for Heroes of Hammerwatch, which can also be extended upon by other mods. It also serves as a good example project of what you can do with the modding API. (Hooks, sval loaders, etc.)
 
 Once installed, you can press F3 in game to open the trainer menu.
+
+![](Trainer.gif)
 
 ## Features
 The trainer ships with the following features:
