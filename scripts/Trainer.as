@@ -68,7 +68,7 @@ namespace Trainer
 		if (g_interface is null)
 			return;
 
-		if (Platform::GetKeyState(60).Pressed) // F3
+		if (Platform::GetKeyState(DefinedKey::F3).Pressed)
 			campaign.ToggleUserWindow(g_interface);
 
 		for (uint i = 0; i < g_cheats.length(); i++)
