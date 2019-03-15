@@ -35,7 +35,6 @@ The following example file adds a cheat for a 10x gold pickup multiplier:
 ```xml
 <loader>Trainer::AddCheats</loader>
 <array>
-	<!-- Infinite health -->
 	<dict>
 		<string name="class">Trainer::ModifierCheat</string>
 
